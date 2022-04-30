@@ -12,6 +12,7 @@
   margin: 25px 30px 25px 350px;
   border-radius: 10px;
   padding: 20px;
+  transition: 1s all ease-in-out;
   }
   
   .label{
@@ -66,9 +67,9 @@
     font-weight: 700;
   }
 
-  .btn{
+  .reg-btn{
   color: #fff;
-  background-color: #fff;
+  background-color: transparent;
   border-radius: 5px;
   font-size: larger;
   display: block;
@@ -76,6 +77,9 @@
   margin: 10px auto;
   border-radius: 30px;
   cursor: progress;
+  border: 1px solid #fff;
+  opacity: .8;
+  width: calc(100%)-50px;
   
   font-weight: 700;
   background-color: transparent;
@@ -89,10 +93,9 @@
   .error{
   display: block;
   background-color: transparent;
-  border: 1px solid #efefef;
+
   border-radius: 10px;
-  outline: #fff;
-  color: red;
+ color: red;
   width: fit-content;
   height: 50px;
   padding: 15px;
@@ -129,7 +132,6 @@
       .error{
         display: block;
         background-color: transparent;
-        border: 1px solid #efefef;
         border-radius: 10px;
         outline: #fff;
         color: red;
@@ -138,6 +140,7 @@
         padding: 15px;
         transition: .5s ease-in-out;
         font-size: 17px;
+        margin-top: 5px;
         }
         
         .success{
@@ -148,5 +151,9 @@
         height: 50px;
         padding: 0 12px 0 12px;
         border-radius: 30px;
+        }
+
+        .btn {
+          padding: 5px 10px 5px 10px;
         }
   }

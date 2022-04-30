@@ -62,7 +62,7 @@ className="error"
 style={{
 display: error ? '' : 'none',
 }}>
-<h1>Please enter all the fields</h1>
+<p>Please enter all the fields</p>
 </div>
 );
 };
@@ -94,7 +94,7 @@ value={email} type="email" placeholder='Enter your email ...' />
 <input onChange={handlePassword} className="input"
 value={password} type="password" placeholder='Enter Password' />
 
-<button onClick={handleSubmit} className="btn" type="submit">
+<button onClick={handleSubmit} className="reg-btn" type="submit">
 Submit
 </button>
 </form>
