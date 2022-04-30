@@ -3,9 +3,10 @@ import Navbar from './components/Navbar';
 import './App.css';
 import Home from './components/pages/Home';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Services from './components/pages/Services';
+import Services from './components/pages/Profile';
 import Products from './components/pages/Products';
 import SignUp from './components/pages/SignUp';
+import Signin from './components/pages/Signin'
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path='/services' component={Services} />
           <Route path='/products' component={Products} />
           <Route path='/sign-up' component={SignUp} />
+          <Route path='/sign-in' component={Signin} />
         </Switch>
       </Router>
     </>

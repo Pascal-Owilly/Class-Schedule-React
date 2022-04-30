@@ -74,6 +74,7 @@
 
 .nav-item {
   height: 80px;
+  display: inline;
 }
 
 .nav-links {
@@ -89,6 +90,13 @@
   border-bottom: 4px solid #fff;
   transition: all 0.2s ease-out;
 }
+
+.nav-links:active {
+  border-bottom: 4px solid #fff;
+  transition: all 0.2s ease-out;
+}
+
+
 
 .fa-bars {
   color: #fff;
