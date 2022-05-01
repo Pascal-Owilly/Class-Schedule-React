@@ -2,9 +2,11 @@ import React from "react";
 import { Container, Row, Col } from 'react-grid-system';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card'; 
+// import Sessions from './Sessions.css';
+
 const Sessions = () => {
     return (
-<Container fluid>
+<Container className="sessions">
   <Row >
     <Col sm={2} style={{background: "#18183D", color:"white", overflow: 'hidden',}} >
     <h3>All</h3>
