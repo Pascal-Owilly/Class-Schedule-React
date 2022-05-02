@@ -26,7 +26,7 @@ function Cards() {
               src='images/school1.jpg'
               text='See notifications here'
               label='Announcements'
-              path='/sign-up'
+              path='/announcement'
             />
           </ul>
           <ul className='cards__items'>
@@ -46,7 +46,7 @@ function Cards() {
               src='images/school4.jpg'
               text='See all, read all, know all'
               label='All activities'
-              path='/sign-up'
+              path='/all-activities'
             />
           </ul>
         </div>
