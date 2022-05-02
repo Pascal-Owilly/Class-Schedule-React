@@ -14,7 +14,7 @@ function Cards() {
               src='images/student1.jpg'
               text='Join the family'
               label='Students Dashboard'
-              path='/services'
+              path='/student'
             />
             <CardItem
               src='images/student2.jpg'
@@ -26,15 +26,15 @@ function Cards() {
               src='images/school1.jpg'
               text='See notifications here'
               label='Announcements'
-              path='/sign-up'
+              path='/announcement'
             />
           </ul>
           <ul className='cards__items'>
             <CardItem
               src='images/school2.jpg'
               text='Check out all students sessions for the module'
-              label='Students Sessions'
-              path='/services'
+              label='Sessions'
+              path='/session'
             />
             <CardItem
               src='images/student3.jpg'
@@ -46,7 +46,7 @@ function Cards() {
               src='images/school4.jpg'
               text='See all, read all, know all'
               label='All activities'
-              path='/sign-up'
+              path='/'
             />
           </ul>
         </div>
