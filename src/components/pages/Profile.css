@@ -330,3 +330,50 @@
   top: 6.43px;
   left: 217px;
 }
+
+.NewRootRoot{
+  width: 258px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  align-items: center;
+}
+
+.SilverFlexColumn{
+  height: 408px;
+  background-color: #c4c4c4;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 40px 39px 40px 24px;
+}
+
+.Text9{
+  font-size: 24px;
+  font-family: Inter;
+  font-weight: 700;
+  margin: 0px 0px 43px 0px;
+}
+
+.Text10{
+  font-size: 24px;
+  font-family: Inter;
+  font-weight: 700;
+  margin: 0px 0px 34px 0px;
+}
+
+.Text11{
+  font-size: 24px;
+  font-family: Inter;
+  font-weight: 700;
+  margin: 0px 0px 42px 0px;
+}
+
+.Text12{
+  font-size: 24px;
+  font-family: Inter;
+  font-weight: 700;
+  align-self: center;
+}

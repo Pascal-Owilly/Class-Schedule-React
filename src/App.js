@@ -8,6 +8,7 @@ import Products from './components/pages/Products';
 import SignUp from './components/pages/SignUp';
 
 import Profile from './components/pages/Profile';
+import Tmpage from './components/pages/Tmpage';
 
 
 import Announcement from './components/pages/Announcement';
@@ -24,6 +25,7 @@ function App() {
           <Route path='/' exact component={Home} />
           
           <Route path='/profile' component={Profile} />
+          <Route path='/tmpage' component={Tmpage} />
 
           
       </Switch>

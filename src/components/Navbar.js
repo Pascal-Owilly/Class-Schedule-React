@@ -49,7 +49,7 @@ function Navbar() {
             
             <li className='nav-item'>
               <Link
-                to='/profile'
+                to='/tmpage'
                 className='nav-links'
                 onClick={closeMobileMenu}
               >

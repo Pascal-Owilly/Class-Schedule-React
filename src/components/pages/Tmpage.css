@@ -1,0 +1,328 @@
+.DanielRoot{
+  height: 733px;
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  min-width: 1430px;
+  align-items: center;
+}
+
+.SilverFlexRow{
+  width: 1328px;
+  background-color: #c4c4c4;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 30px 51px 24px 51px;
+  margin: 0px 0px 63px 0px;
+}
+
+.Text1{
+  width: 357px;
+  height: 44px;
+  display: flex;
+  font-size: 36px;
+  font-family: Inter;
+  font-weight: 700;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+
+.FlexRow{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0px 123px;
+  margin: 0px 0px 15px 0px;
+}
+
+.ProfilePicture{
+  height: 286px;
+  background-image: url("https://file.rendit.io/n/GVpczV8uwiohzKyQIvt0.png");
+  background-size: cover;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 16px 0px 17px;
+  margin: 0px 121px 0px 0px;
+}
+
+.Ellipse{
+  width: 217px;
+  height: 221px;
+}
+
+.FlexColumn{
+  align-self: stretch;
+  width: 419px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 44px;
+  flex-grow: 1;
+  align-items: flex-end;
+  padding: 10px 0px;
+  margin: 0px 106px 0px 0px;
+}
+
+.FlexRow1{
+  width: 386px;
+  background-image: url("https://file.rendit.io/n/q6bGqxI8Ai6yr9cCcYgP.svg");
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 6px 14px 10px 14px;
+}
+
+.NameMacDoe{
+  font-size: 24px;
+  font-family: Inter;
+  font-weight: 400;
+  display: contents;
+  white-space: pre-wrap;
+}
+
+.Element1{
+  align-self: stretch;
+  height: 142px;
+  position: relative;
+  min-width: 419px;
+}
+
+.FlexColumn1{
+  background-image: url("https://file.rendit.io/n/P0SRG43TQUUOdNf4M4JM.svg");
+  background-size: cover;
+  position: absolute;
+  top: 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 49px 50px 43px 26px;
+}
+
+.Text2{
+  width: 338px;
+  height: 44px;
+  display: flex;
+  font-size: 24px;
+  font-family: Inter;
+  font-weight: 400;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+
+.Text3{
+  width: 364px;
+  height: 42px;
+  display: flex;
+  font-size: 24px;
+  font-family: Inter;
+  font-weight: 500;
+  position: absolute;
+  left: 19px;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+
+.SilverRectangle{
+  width: 207px;
+  height: 66px;
+  background-color: #c4c4c4;
+  position: relative;
+  border-radius: 11px;
+  margin: 32px 35px 0px 0px;
+}
+
+.Editprofile{
+  width: 70px;
+  height: 52px;
+  position: absolute;
+  top: 6px;
+}
+
+.Text4{
+  text-align: right;
+  width: 137px;
+  height: 31px;
+  display: flex;
+  font-size: 24px;
+  font-family: Inter;
+  font-weight: 500;
+  position: absolute;
+  top: 11px;
+  left: 57px;
+  flex-direction: column;
+  align-items: end;
+  justify-content: center;
+}
+
+.Settings{
+  width: 55px;
+  height: 53px;
+  margin: 32px 0px 0px 0px;
+}
+
+.FlexRow2{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 126px;
+  align-items: center;
+  padding: 0px 140px;
+  margin: 0px 0px 58px 0px;
+}
+
+.SilverFlexColumn{
+  height: 48px;
+  background-color: #c4c4c4;
+  display: flex;
+  align-self: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 13px;
+  padding: 0px 13px 0px 2px;
+}
+
+.Text5{
+  text-align: center;
+  width: 218px;
+  height: 30px;
+  display: flex;
+  font-size: 24px;
+  font-family: Inter;
+  font-weight: 500;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.SilverFlexColumn1{
+  height: 124px;
+  background-color: #c4c4c4;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 13px;
+  align-items: center;
+  padding: 6px 36px 6px 14px;
+}
+
+.Text7{
+  width: 287px;
+  height: 44px;
+  display: flex;
+  font-size: 24px;
+  font-family: Inter;
+  font-weight: 400;
+  align-self: flex-start;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  margin: 0px 0px 0px 7px;
+}
+
+.SilverFlexRow1{
+  width: 1094px;
+  height: 63.8px;
+  background-color: #c4c4c4;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 5px 168px 8.2px 168px;
+}
+
+.FlexRow3{
+  width: 854px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 0px 0px 0.2px 0px;
+}
+
+.Element2{
+  width: 460px;
+  height: 63.6px;
+  position: relative;
+  flex-grow: 1;
+  margin: 0px 86px 0px 0px;
+}
+
+.Copyright{
+  text-align: center;
+  width: 460px;
+  height: 48px;
+  display: flex;
+  font-size: 32px;
+  font-family: Inter;
+  font-weight: 500;
+  position: absolute;
+  top: 11px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  white-space: pre-wrap;
+}
+
+.Copyright1{
+  font-size: 48px;
+  font-family: Roboto;
+  font-weight: 700;
+  color: #111111;
+  position: absolute;
+  top: 5px;
+  left: 53px;
+}
+
+.Image1{
+  width: 57.6px;
+  height: 57.6px;
+  align-self: flex-end;
+  margin: 0px 57.4px 0px 0px;
+}
+
+.Element3{
+  width: 57.6px;
+  height: 63.6px;
+  position: relative;
+  flex-grow: 1;
+}
+
+.Image2{
+  width: 57.6px;
+  height: 47.1px;
+  position: absolute;
+  top: 10px;
+}
+
+.Image3{
+  width: 57.6px;
+  height: 58px;
+  position: absolute;
+  left: 136px;
+}
+
+.NameMacDoe1{
+  height: 42px;
+  display: flex;
+  font-size: 24px;
+  font-family: Inter;
+  font-weight: 500;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  white-space: pre-wrap;
+  /* width: ${(props) => props.width}; */
+}

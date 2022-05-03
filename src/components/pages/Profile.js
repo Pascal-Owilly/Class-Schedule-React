@@ -4,6 +4,15 @@ import "./Profile.css";
 const Profile = () => {
   return (
     <div>
+      <div className="NewRootRoot">
+        <div className="SilverFlexColumn">
+          <div className="Text9">Schedule</div>
+          <div className="Text10">Add Session</div>
+          <div className="Text11">Students</div>
+          <div className="Text12">Announcements</div>
+        </div>
+      </div>
+
       <div className="BodyGroupRoot">
         <div className="Element1">
           <div className="Element2">
@@ -11,7 +20,8 @@ const Profile = () => {
               <div className="SilverFlexRow">
                 <div className="Text1">Session 1</div>
               </div>
-              <div className="Image1"
+              <div
+                className="Image1"
                 src={"https://file.rendit.io/n/DQqqKMjZvczKjRlNuSZT.svg"}
               />
             </div>
@@ -19,10 +29,12 @@ const Profile = () => {
               <div className="Text2">Edit</div>
               <div className="Text3">Delete</div>
               <div className="Deletesvgrepocom" src={""} />
-              <div className="Image2"
+              <div
+                className="Image2"
                 src={"https://file.rendit.io/n/q9IlhrhMXO4z6ahFVFBz.svg"}
               />
-              <div className="Image3"
+              <div
+                className="Image3"
                 src={"https://file.rendit.io/n/78eHDdiZJQcoh6iJffOs.svg"}
               />
             </div>
@@ -39,10 +51,13 @@ const Profile = () => {
         </div>
         <div className="FlexColumn1">
           <div className="SilverRectangle" alignSelf={"flex-start"}>
-            <div className="Text7" left={"45px"}>Session 1</div>
+            <div className="Text7" left={"45px"}>
+              Session 1
+            </div>
             <div className="SilverRectangle1">
               <div className="Text8">Session 6</div>
-              <div className="Image4"
+              <div
+                className="Image4"
                 src={"https://file.rendit.io/n/dgSrqR9q8XfQ3TxHhUi3.svg"}
               />
               <div className="Text9">9.00 pm - 10.00am</div>
@@ -52,7 +67,8 @@ const Profile = () => {
             <div className="Text10">Session 1</div>
             <div className="SilverRectangle3">
               <div className="Text11">Session 5</div>
-              <div className="Image5"
+              <div
+                className="Image5"
                 src={"https://file.rendit.io/n/SjP9p6sSL9571tks4uKr.svg"}
               />
               <div className="Text12">2.00 pm - 3.00pm</div>
@@ -61,20 +77,26 @@ const Profile = () => {
         </div>
         <div className="FlexColumn2">
           <div className="SilverRectangle" alignSelf={"inherit"}>
-            <div className="Text7" left={"44px"}>Session 1</div>
+            <div className="Text7" left={"44px"}>
+              Session 1
+            </div>
             <div className="SilverRectangle1">
               <div className="Text8">Session 6</div>
-              <div className="Image4"
+              <div
+                className="Image4"
                 src={"https://file.rendit.io/n/szSIH5YJiXuolfv9eqWP.svg"}
               />
               <div className="Text15">11.00 pm - 12.00am</div>
             </div>
           </div>
           <div className="SilverRectangle" alignSelf={"inherit"}>
-            <div className="Text7" left={"44px"}>Session 1</div>
+            <div className="Text7" left={"44px"}>
+              Session 1
+            </div>
             <div className="SilverRectangle1">
               <div className="Text8">Session 6</div>
-              <div className="Image4"
+              <div
+                className="Image4"
                 src={"https://file.rendit.io/n/szSIH5YJiXuolfv9eqWP.svg"}
               />
               <div className="Text18">4.00 pm - 5.00pm</div>
