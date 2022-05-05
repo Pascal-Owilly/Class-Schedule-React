@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Student from './components/pages/Student';
 import Products from './components/pages/Products';
 import SignUp from './components/pages/SignUp';
+import Studentform from './components'
 
 import Profile from './components/pages/Profile';
 import Tmpage from './components/pages/Tmpage';
@@ -26,6 +27,7 @@ function App() {
           
           <Route path='/profile' component={Profile} />
           <Route path='/tmpage' component={Tmpage} />
+          <Route path='/studentform' component={Studentform} />
 
           
       </Switch>
