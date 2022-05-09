@@ -12,6 +12,8 @@ import Session from './components/pages/Session';
 import Staff from './components/pages/Staff';
 import Profile from './components/pages/Profile';
 import Contacts from './components/pages/Contacts';
+import Comment from './components/pages/Comments';
+
 
   
 class App extends Component {
@@ -42,6 +44,7 @@ class App extends Component {
           <Route path='/announcement' component={Announcement} />
           <Route path='/student' component={Student} />
           <Route path='/login' component={Login} />
+          <Route path='/comments' component={Comment} />
           <Route path='/session' component={Session} />
           <Route path='/staff' component={Staff} />
           <Route path='/profile' component={Profile} />
