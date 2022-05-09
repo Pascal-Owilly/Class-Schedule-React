@@ -1,15 +1,7 @@
 import React, { Component } from 'react';
 import Navbar from './components/Navbar';
 import './App.css';
-import Home from './components/pages/Home';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Student from './components/pages/Student';
-import StudentSignup from './components/pages/StudentSignup';
-import Login from './components/pages/Login';
-import Session from './components/pages/Session';
-import Staff from './components/pages/Staff';
-import Profile from './components/pages/Profile';
-import Announcement from './components/pages/Announcement';
+
 import Tmpage from './components/Tmpage';
 
   
@@ -35,13 +27,7 @@ class App extends Component {
       <Router>
         <Navbar />
         <Switch>
-          <Route path='/' exact component={Home} />
-          <Route path='/signup' component={StudentSignup} />
-          <Route path='/student' component={Student} />
-          <Route path='/login' component={Login} />
-          <Route path='/session' component={Session} />
-          <Route path='/staff' component={Staff} />
-          <Route path='/profile' component={Profile} />
+          
           <Route path='/tmpage' component={Tmpage} />
           <Announcement announcements={this.state.announcements} />
           <Session sessions={this.state.sessions} />
