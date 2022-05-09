@@ -63,7 +63,7 @@ const [isOpen, setIsOpen] = React.useState(false);
     <Card.Body className="test">
     <Card.Title  className='repo-text'key={a}>{item.title}</Card.Title>
     <Card.Text className='repo-description' style={{color:'#18183D'}} key={b}>{item.message}</Card.Text>        
-    <Card.Subtitle className="mb-2 text-muted"key={c}>Posted by: {item.user}</Card.Subtitle>
+    <Card.Subtitle className="mb-2 text-muted"key={c}>Posted by: {item.user.username}</Card.Subtitle>
     <Card.Subtitle className="mb-2 text-muted"key={d}>Posted On: {item.date_created}</Card.Subtitle>
     <Card.Subtitle className="mb-2 text-muted"key={e}>Updated On: {item.date_updated}</Card.Subtitle> 
   <style type="text/css">
@@ -97,7 +97,6 @@ const [isOpen, setIsOpen] = React.useState(false);
         </Modal.Body>
         <Modal.Footer>
         <Button variant="flat" size="sm" onClick={hideModal}>Close</Button>
-
         </Modal.Footer>
       </Modal>
     </>

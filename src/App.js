@@ -8,6 +8,7 @@ import Products from './components/pages/Products';
 import SignUp from './components/pages/SignUp';
 import Announcement from './components/pages/Announcement';
 import Login from './components/pages/Login';
+import New from './components/pages/NewAnnouncement';
 import Session from './components/pages/Session';
 import Staff from './components/pages/Staff';
 import Profile from './components/pages/Profile';
@@ -45,6 +46,7 @@ class App extends Component {
           <Route path='/student' component={Student} />
           <Route path='/login' component={Login} />
           <Route path='/comments' component={Comment} />
+          <Route path='/new' component={New} />
           <Route path='/session' component={Session} />
           <Route path='/staff' component={Staff} />
           <Route path='/profile' component={Profile} />

@@ -31,12 +31,14 @@ const Announcement = () => {
 <Row>   
 <Col className='links' sm={2} style={{background: "#18183D", color:"white",overflow: 'hidden',}}>
   <h3>All</h3>
+  <h6><a style={{color: "white",textDecoration:"none"}}href="/new">New Announcement</a></h6> 
   <Card.Link className='links' style={{color: "white"}}href="/student">Courses</Card.Link>   
   <h6>Students</h6>
   <Card.Link className='links' style={{color: "white"}}href="/sessions">Sessions</Card.Link> 
   <h6><a style={{color: "white",textDecoration:"none"}}href="/comments">Comments</a></h6> 
 </Col>
-<Col sm={10}><h2>| Announcements</h2>
+<Col sm={10}>
+<h2>| Announcements</h2>
 <div className='repo-container'>
       <ListLoading isLoading={appState.loading} announcements={appState.announcements} />
     </div>

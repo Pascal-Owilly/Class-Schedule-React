@@ -71,3 +71,7 @@
       .links{
         text-decoration: none;
     }
+    .new{
+      display: flex;
+      flex-direction: row-reverse;
+    }
