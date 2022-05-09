@@ -10,6 +10,7 @@ import Session from './components/pages/Session';
 import Staff from './components/pages/Staff';
 import Profile from './components/pages/Profile';
 import Announcement from './components/pages/Announcement';
+import Tmpage from './components/Tmpage';
 
   
 class App extends Component {
@@ -41,6 +42,7 @@ class App extends Component {
           <Route path='/session' component={Session} />
           <Route path='/staff' component={Staff} />
           <Route path='/profile' component={Profile} />
+          <Route path='/tmpage' component={Tmpage} />
           <Announcement announcements={this.state.announcements} />
           <Session sessions={this.state.sessions} />
           <Staff staff={this.state.staff} />

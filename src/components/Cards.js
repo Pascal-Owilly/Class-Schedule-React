@@ -20,7 +20,7 @@ function Cards() {
               src='images/student2.jpg'
               text='Register students, make announcements and more'
               label='Staff Dashboard'
-              path='/staff'
+              path='/tmpage'
             />
             <CardItem
               src='images/school1.jpg'
