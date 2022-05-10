@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import Navbar from './components/Navbar';
 import './App.css';
+import { Route } from 'react-router-dom';
+import { Switch } from 'react-router-dom';
+
 
 import Tmpage from './components/Tmpage';
 
