@@ -43,11 +43,11 @@ class App extends Component {
           <Route path='/session' component={Session} />
           <Route path='/staff' component={Staff} />
           <Route path='/profile' component={Profile} />
+          <Route path='/comments' component={Comments} />
           <Announcement announcements={this.state.announcements} />
           <Session sessions={this.state.sessions} />
           <Staff staff={this.state.staff} />
           <Comments comments={this.state.comments} />
-          <Route path='/comments' component={Comments} />
           {/* <GoogleLogin clientId='391959673513-4tum0hug3v96ggrm2p754lrpnh1hc589.apps.googleusercontent.com' 
           buttonText = 'Authoriza calendar'
           onSuccess = {responseGgle}
