@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Container, Modal } from 'react-bootstrap';
+import { Container } from 'react-bootstrap';
 import {  Row, Col } from 'react-grid';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Card from 'react-bootstrap/Card'  
@@ -10,7 +10,7 @@ export default function UsersData() {
   const [comments, fetchComments] = useState([])
 
   const getData = () => {
-    fetch('https://class-schedule-app00.herokuapp.com/comments/')
+    fetch('https://class-schedule-app00.herokuapp.com/comments')
       .then((res) => res.json())
       .then((res) => {
         console.log(res)
@@ -24,6 +24,7 @@ export default function UsersData() {
 
   return (
     <Container fluid>
+      <h2>All comments</h2>
     <Row>
       <Col className="item-container">
       {comments.map((item,i,j,k,l) => {

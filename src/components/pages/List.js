@@ -61,9 +61,9 @@ const [isOpen, setIsOpen] = React.useState(false);
         return (
     <Card key={item.id}  style={{ width: '15rem',borderRadius: '15px', backgroundColor: "#E1E4F2"}}   className='card'>
     <Card.Body className="test">
-    <Card.Title  className='repo-text'key={a}>{item.title}</Card.Title>
+    <Card.Title  className='repo-text'key={a}><h4>{item.title}</h4></Card.Title>
     <Card.Text className='repo-description' style={{color:'#18183D'}} key={b}>{item.message}</Card.Text>        
-    <Card.Subtitle className="mb-2 text-muted"key={c}>Posted by: {item.user.username}</Card.Subtitle>
+    <Card.Subtitle className="mb-2 text-muted"key={c}>Posted by: {item.user}</Card.Subtitle>
     <Card.Subtitle className="mb-2 text-muted"key={d}>Posted On: {item.date_created}</Card.Subtitle>
     <Card.Subtitle className="mb-2 text-muted"key={e}>Updated On: {item.date_updated}</Card.Subtitle> 
   <style type="text/css">

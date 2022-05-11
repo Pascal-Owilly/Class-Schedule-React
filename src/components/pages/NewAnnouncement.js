@@ -6,8 +6,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Card from 'react-bootstrap/Card'  
 import Button from 'react-bootstrap/Button';
 
-
-
 const New = () => {
 const [title, setTitle]= useState("");
 const [message, setMessage]= useState("");
@@ -30,12 +28,12 @@ async function submit() {
     });
     let res = await result.json();
       if (result.status === 200) {
-            setTitle("");
-            setMessage("");
-            setDate("");
-            setUpdateDate("");
-            setUser("");
-            setSuccess("Your announcement has been received!");
+        setTitle("");
+        setMessage("");
+        setDate("");
+        setUpdateDate("");
+        setUser("");
+        setSuccess("Your announcement has been received!");
       } else {
         setSuccess("Your announcement has been received!");
       }
@@ -55,9 +53,9 @@ async function submit() {
   <Card.Link className='links' style={{color: "white"}}href="/sessions">Sessions</Card.Link> 
   <h6><a style={{color: "white",textDecoration:"none"}}href="/comments">Comments</a></h6> 
 </Col>
-<Col sm={10}>
-<h2>| New Announcement</h2>
-<div>
+<Col sm={10} className="col-md-6 ">
+<h2 className="col-md-6 offset-4"> New Announcement</h2>
+<div className="col-md-6 offset-4">
         <input value={title} onChange={(e)=>setTitle(e.target.value)} type="text" className='formcontrol' placeholder='Title' /><br />
         <input value={message} onChange={(e)=>setMessage(e.target.value)} style={{height:'50px'}} type="text" className='formcontrol' placeholder='Message' Row/><br />
         <input value={date_created} onChange={(e)=>setDate(e.target.value)} type="date" className='formcontrol' placeholder='Date' /><br />
@@ -65,7 +63,20 @@ async function submit() {
         <input value={user} onChange={(e)=>setUser(e.target.value)} type="number" className='formcontrol' placeholder='User' /><br />
         <Button onClick={submit} variant="flat" size="sm" type="submit">Submit</Button>
         <div style={{color:"#18183D"}} className="message">{success ? <p style={{color:"#18183D"}}>{success}</p> : null}</div>
-             
+        <style type="text/css">
+    {`
+    .btn-flat {
+      background-color: #18183D;
+      color: white;
+    }
+
+    .btn-sm {
+      padding: 0.1rem 0.5rem;
+      font-size: 0.9rem;
+    }
+    `}
+  </style>
+       
     </div>
 </Col>  
 </Row>

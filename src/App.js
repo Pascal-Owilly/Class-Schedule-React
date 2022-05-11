@@ -14,6 +14,8 @@ import Staff from './components/pages/Staff';
 import Profile from './components/pages/Profile';
 import Contacts from './components/pages/Contacts';
 import Comment from './components/pages/Comments';
+import Google from './components/pages/Google';
+
 
 
   
@@ -50,6 +52,9 @@ class App extends Component {
           <Route path='/session' component={Session} />
           <Route path='/staff' component={Staff} />
           <Route path='/profile' component={Profile} />
+          <Route path='/google' component={Google} />
+
+
           <Contacts contacts={this.state.contacts} />
           <Session sessions={this.state.sessions} />
 
