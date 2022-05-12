@@ -17,6 +17,7 @@ const List = (props) => {
 async function signup() {
   let item ={comment,date_posted,announcement,user}
   console.warn(item)
+ 
 
   let result = await  fetch("https://class-schedule-app00.herokuapp.com/comments/", {
       method: "POST",
