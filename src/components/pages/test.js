@@ -53,7 +53,7 @@ async function submit() {
   <h6><a style={{color: "white",textDecoration:"none"}}href="/comments">Comments</a></h6> 
 </Col>
 <Col className='mt-5' sm={10}>
-<h2>| New Announcement</h2>
+<h2> New Announcement</h2>
 <div>
         <input value={title} onChange={(e)=>setTitle(e.target.value)} type="text" className='formcontrol' placeholder='Title' /><br />
         <input value={message} onChange={(e)=>setMessage(e.target.value)} style={{height:'50px'}} type="text" className='formcontrol' placeholder='Message' Row/><br />
