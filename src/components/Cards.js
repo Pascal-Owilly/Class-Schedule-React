@@ -26,7 +26,7 @@ function Cards() {
               src='images/school1.jpg'
               text='See notifications here'
               label='Announcements'
-              path='/announcement'
+              path='/announcement'  
             />
           </ul>
           <ul className='cards__items_session'>
@@ -34,7 +34,7 @@ function Cards() {
               src='images/school2.jpg'
               text='Check out all students sessions for the module'
               label='Sessions'
-              path='/session'
+              path='/sesion'
             />
 
           </ul>

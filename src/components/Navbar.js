@@ -44,7 +44,8 @@ function Navbar() {
           </div>
           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
             
-          {auth.isAuthenticated ?<>
+          {auth.isAuthenticated ?
+          <>
             <li className='nav-item'>
               <Link to='/announcements' className='nav-links' onClick={closeMobileMenu}>
                 Announcements

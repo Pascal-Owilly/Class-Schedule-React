@@ -47,10 +47,8 @@ class App extends Component {
           <Route path='/login' component={Login} />
           <Route path='/session' component={Session} />
           <Route path='/staff' component={Staff} />
-
-          <Route path='/schedule' component={Schedule} />
           <Route exact path='/sesion' component={Sesion} />
-
+          <Route exact path='/schedule' component={Schedule} />
           <Route path='/profile' component={Profile} />
           <Route path='/comments' component={Comments} />
           <Route path='/newstudent' component={Newstudent} />

@@ -6,9 +6,22 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Card from 'react-bootstrap/Card'  
 import List from './List';
 import withListLoading from './withListLoading';
+import {useSelector, useDispatch} from 'react-redux';
+import { Link } from 'react-router-dom';
+
 
 
 const Announcement = () => {
+  const auth= useSelector((state) => state.auth)
+  const dispatch=useDispatch()
+  console.log(auth);
+
+  const [click, setClick] = useState(false);
+  const [button, setButton] = useState(true);
+
+  const handleClick = () => setClick(!click);
+  const closeMobileMenu = () => setClick(false);
+
   const ListLoading = withListLoading(List);
   const [appState, setAppState] = useState({
     loading: false,
@@ -30,11 +43,40 @@ const Announcement = () => {
 
 <Row>   
 <Col className="announcement"  sm={2} style={{background: "#18183D",height: "760px", color:"white", overflow: 'hidden',position:"fixed", marginTop: "5.0rem"}}>
-  <h3 style={{marginLeft: "30px", marginTop: "15%"}}>All</h3>
-  {/* <Card.Link style={{color: "white", textDecoration: "none",  marginLeft: "30px"}}href="/student">Courses</Card.Link>    */}
-  {/* <h6>Students</h6> */} <br />
-  <Card.Link style={{color: "white", textDecoration: "none", marginLeft: "30px"}}href="/student">Students Page</Card.Link> 
-<h6><a style={{color: "white",textDecoration:"none", marginLeft: "30px"}}href="/comments">Comments</a></h6>
+{auth.isAuthenticated ?<>
+            <li className='nav-item'>
+              <Link to='/announcements' className='nav-links' onClick={closeMobileMenu}>
+                Notifications
+              </Link>
+            </li>
+            <li className='nav-item'>
+              <Link to='/sesion' className='nav-links' onClick={closeMobileMenu}>
+                Sessions
+              </Link>
+            </li>
+            
+            <li className='nav-item'>
+              <Link
+                to='/profile'
+                className='nav-links'
+                onClick={closeMobileMenu}
+              >
+                Profile
+              </Link>
+            </li>
+
+            <li className='nav-item'>
+              <Link
+                to='/schedule'
+                className='nav-links'
+                onClick={closeMobileMenu}
+              >
+                Schedule
+              </Link>
+            </li>
+           </>: <>
+          
+           </>}
 
 </Col>
 <Col sm={10}><h2>| Announcements</h2>
