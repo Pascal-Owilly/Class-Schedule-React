@@ -30,7 +30,7 @@ const StudentSignup = ({create_studentuser, isAuthenticated,isStudent}) => {
     create_studentuser(newStudent)
    }
     if(isAuthenticated && isStudent){
-        return <Redirect to="/student"/>
+        return <Redirect to="/staff"/>
     }
     return (
         <div className='container' style={{marginTop: "10%"}}>
@@ -39,7 +39,7 @@ const StudentSignup = ({create_studentuser, isAuthenticated,isStudent}) => {
                 <div className='col-md-8 mx-auto'>
                     <form onSubmit={ e =>handleSubmit(e)}>
                         <div className='form-group mb-3'>
-                            <label>username</label>
+                            <label>Username</label>
                             <input type='text'
                                  className='form-control' 
                                  name='username'
@@ -50,7 +50,7 @@ const StudentSignup = ({create_studentuser, isAuthenticated,isStudent}) => {
          
                         <div className='form-group mb-3'>
                             <label>Email</label>
-                            <input type='text'
+                            <input type='email'
                                  className='form-control' 
                                  name='email'
                                  value={email}
@@ -58,7 +58,7 @@ const StudentSignup = ({create_studentuser, isAuthenticated,isStudent}) => {
                                  />
                         </div>
                         <div className='form-group mb-3'>
-                            <label>password</label>
+                            <label>Password</label>
                             <input type='password'
                                  className='form-control' 
                                  name='password'
@@ -68,14 +68,15 @@ const StudentSignup = ({create_studentuser, isAuthenticated,isStudent}) => {
                         </div>
                         <div className='form-group mb-3'>
                             <label>Confirm password</label>
-                            <input type='text'
+                            <input type='password'
                                  className='form-control' 
                                  name='password2'
                                  value={password2}
                                  onChange={(e)=>handleChange(e)}
                                  />
                         </div>
-                        <button type="submit" className="btn btn-primary">Signup</button>
+
+                        <button type="submit"  style={{backgroundColor: "#18183D",color:'white',fontWeight:'bold'}}className="btn">Add</button>
                     </form>
                 </div>
             </div>

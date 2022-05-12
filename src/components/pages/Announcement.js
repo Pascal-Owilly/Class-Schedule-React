@@ -75,7 +75,7 @@ const Announcement = () => {
       <ListLoading isLoading={appState.loading} announcements={appState.announcements} />
     </div> 
     <footer>
-      <div className='footer'  style={{marginLeft: "21%", marginTop: "5%"}}>
+      <div className='footer'  style={{marginLeft: "21%", marginTop: "5%",textAlign:'center'}}>
         Built with {' '}
         <span role='img' aria-label='love'>
           💚

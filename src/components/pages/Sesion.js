@@ -88,7 +88,7 @@ const Sesion = () => {
       {auth.isStudent ? null:<>
         <div className="col-md-4 mt-5 ">
 
-        <Button onClick={showModal} className='btn btn-primary '> Add a New Session</Button>
+        <Button onClick={showModal} className='btn' style={{backgroundColor: "#18183D",color:'white',fontWeight:'bold'}}> Add a New Session</Button>
 
         <Modal show={isOpen} onHide={hideModal}>
         <Modal.Header>
@@ -147,16 +147,14 @@ const Sesion = () => {
 
             <div className="float-right">
               <Button
-                variant="primary"
-                type="submit"
+style={{backgroundColor: "#18183D",color:'white',fontWeight:'bold'}}                type="submit"
                 onClick={onSubmit}
                 className="mx-2"
               >
                 Save
               </Button>
               <Button
-                variant="primary"
-                type="button"
+style={{backgroundColor: "#18183D",color:'white',fontWeight:'bold'}}                type="button"
                 onClick={() => onUpdate(sessionId)}
                 className="mx-2"
               >
@@ -245,16 +243,20 @@ const Sesion = () => {
                       <h4>Date</h4>
                       <Card.Subtitle > {moment(session.date).utc().format('YYYY-MM-DD')} from, {session.time}</Card.Subtitle><br/>
                       <h4>Time</h4>
-                      <a className="btn btn-primary" target='_blank' href={session.link} >Join Session</a>
+                      <a className="btn" style={{backgroundColor: "#18183D",color:'white',fontWeight:'bold'}} target='_blank' href={session.link} >Join Session</a>
               
                       {/* <Button variant="primary">Go somewhere</Button> */}
                     </Card.Body>
                     <Card.Footer className="bg-default ">
                     {auth.isStudent ? null : <>
-                        <Button
-                          variant="secondary"
-                          type="button"
-                          onClick={() => selectSession(session.id)}
+                      <Button
+style={{backgroundColor: "#18183D",color:'white',fontWeight:'bold'}}                           type="button"
+                          onClick={
+                            () =>{
+                              selectSession(session.id)
+                              showModal()
+                             } 
+                                 }
                           className="mx-2"
                         >
                           Edit

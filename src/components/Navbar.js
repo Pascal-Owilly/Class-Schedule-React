@@ -44,17 +44,34 @@ function Navbar() {
           </div>
           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
             
-          {auth.isAuthenticated ?<>
+          {auth.isAuthenticated ?
+          <>
             <li className='nav-item'>
             {/* <Link to='/announcements' className='nav-links' onClick={closeMobileMenu}>
                 Add Student
               </Link> */}
 
               {auth.isStudent ? null : <>
-                <Link to='/announcements' className='nav-links' onClick={closeMobileMenu}>
+                <Link to='/addstudent' className='nav-links' onClick={closeMobileMenu}>
                 Add Student
               </Link>
-      </>}
+              
+           </>
+             }
+
+            </li>
+            <li className='nav-item'>
+            {/* <Link to='/announcements' className='nav-links' onClick={closeMobileMenu}>
+                Add Student
+              </Link> */}
+
+              {auth.isStudent ? null : <>
+                <Link to='/newannouncement' className='nav-links' onClick={closeMobileMenu}>
+                Add Announcement
+              </Link>
+              
+           </>
+             }
 
             </li>
             <li className='nav-item'>

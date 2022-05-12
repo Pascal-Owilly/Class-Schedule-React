@@ -78,7 +78,7 @@ const AddSchedule = () => {
       {auth.isStudent ? null:<>
         <div className="col-md-4 mt-5 fom">
         
-        <Button onClick={showModal} className='btn btn-primary'> Add a New Schedule</Button>
+        <Button onClick={showModal} className='btn ' style={{backgroundColor: "#18183D",color:'white',fontWeight:'bold'}}> Add a New Schedule</Button>
         <Modal show={isOpen} onHide={hideModal}>
         <Modal.Header>
           <Modal.Title><h1>New Schedule </h1></Modal.Title>
@@ -116,8 +116,7 @@ const AddSchedule = () => {
 
             <div className="float-right">
               <Button
-                variant="primary"
-                type="submit"
+style={{backgroundColor: "#18183D",color:'white',fontWeight:'bold'}}                type="submit"
                 onClick={onSubmit}
                 className="mx-2"
               >
@@ -125,8 +124,7 @@ const AddSchedule = () => {
               </Button>
               <Button
               onClick={showModal} 
-                variant="primary"
-                type="button"
+              style={{backgroundColor: "#18183D",color:'white',fontWeight:'bold'}}                type="button"
                 onClick={() => onUpdate(sheduleId)}
                 className="mx-2"
               >
@@ -173,10 +171,13 @@ const AddSchedule = () => {
                     <td>
                     {auth.isStudent ? null: <>
                       <Button
-                variant="secondary"
-                type="button"
-               
-                onClick={() => selectShedule(shedule.id)} 
+                style={{backgroundColor: "#18183D",color:'white',fontWeight:'bold'}}                type="button"
+                onClick={
+                  () =>{
+                    selectShedule(shedule.id)
+                    showModal()
+                   } 
+                       }
                 className="mx-2"
               >
                 Edit

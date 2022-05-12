@@ -4,6 +4,7 @@ import {  Row, Col } from 'react-grid';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Card from 'react-bootstrap/Card'  
 import './Comments.css';
+import moment from 'moment';
 
 
 export default function UsersData() {
@@ -24,16 +25,20 @@ export default function UsersData() {
 
   return (
     <Container fluid>
+
     <Row style={{marginTop: "6rem"}}>
+
       <Col className="item-container">
+
       {comments.map((item,i,j,k,l) => {
         return (
           <Card style={{ width: '15rem',borderRadius: '15px', backgroundColor: "#fff", border: "none", outline: "none"}}  className='card' key={item.id}>
           <Card.Body className="test">
           <Card.Title  className='repo-text' style={{color:"black"}} key={i}>{item.comment}</Card.Title>
           <Card.Text className='repo-description'key={j} style={{color:'#18183D'}}>{item.announcement}</Card.Text>        
-          <Card.Subtitle className="mb-2 text-muted" key={k}>Posted by: {item.user}</Card.Subtitle>
-          <Card.Subtitle className="mb-2 text-muted" key={l}>On: {item.date_posted}</Card.Subtitle>
+          {/* <Card.Subtitle className="mb-2 text-muted" key={k}>Posted by: {item.user}</Card.Subtitle> */}
+          <Card.Subtitle className="mb-2 text-muted" key={l}>Posted On: {moment(item.date_posted).utc().format('DD-MM-YYYY')}</Card.Subtitle>
+
           </Card.Body>
           </Card>
      )

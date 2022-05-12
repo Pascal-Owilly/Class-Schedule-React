@@ -68,7 +68,7 @@ const TmSignup = ({create_tmuser, isAuthenticated, isStudent}) => {
                         </div>
                         <div className='form-group mb-3'>
                             <label>Confirm password</label>
-                            <input type='text'
+                            <input type='password'
                                  className='form-control' 
                                  name='password2'
                                  value={password2}
