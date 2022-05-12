@@ -30,7 +30,7 @@ const Announcement = () => {
 
   useEffect(() => {
     setAppState({ loading: true });
-    const apiUrl = `https://class-schedule-app00.herokuapp.com/api/announcements/`;
+    const apiUrl = `https://class-schedule-app00.herokuapp.com/getannouncements/`;
     fetch(apiUrl)
       .then((res) => res.json())
       .then((announcements) => {
@@ -43,40 +43,7 @@ const Announcement = () => {
 
 <Row>   
 <Col className="announcement"  sm={2} style={{background: "#18183D",height: "760px", color:"white", overflow: 'hidden',position:"fixed", marginTop: "5.0rem"}}>
-{auth.isAuthenticated ?<>
-            <li className='nav-item'>
-              <Link to='/announcements' className='nav-links' onClick={closeMobileMenu}>
-                Notifications
-              </Link>
-            </li>
-            <li className='nav-item'>
-              <Link to='/sesion' className='nav-links' onClick={closeMobileMenu}>
-                Sessions
-              </Link>
-            </li>
-            
-            <li className='nav-item'>
-              <Link
-                to='/profile'
-                className='nav-links'
-                onClick={closeMobileMenu}
-              >
-                Profile
-              </Link>
-            </li>
 
-            <li className='nav-item'>
-              <Link
-                to='/schedule'
-                className='nav-links'
-                onClick={closeMobileMenu}
-              >
-                Schedule
-              </Link>
-            </li>
-           </>: <>
-          
-           </>}
 
 </Col>
 <Col sm={10}><h2>| Announcements</h2>

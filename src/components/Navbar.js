@@ -47,29 +47,26 @@ function Navbar() {
           {auth.isAuthenticated ?
           <>
             <li className='nav-item'>
-              <Link to='/announcements' className='nav-links' onClick={closeMobileMenu}>
-                Announcements
+            {/* <Link to='/announcements' className='nav-links' onClick={closeMobileMenu}>
+                Add Student
+              </Link> */}
+
+              {auth.isStudent ? null : <>
+                <Link to='/announcements' className='nav-links' onClick={closeMobileMenu}>
+                Add Student
               </Link>
+      </>}
+
             </li>
             <li className='nav-item'>
-              <Link to='/session' className='nav-links' onClick={closeMobileMenu}>
+              <Link to='/sesion' className='nav-links' onClick={closeMobileMenu}>
                 Sessions
-              </Link>
-            </li>
-            
-            <li className='nav-item'>
-              <Link
-                to='/profile'
-                className='nav-links'
-                onClick={closeMobileMenu}
-              >
-                Profile
               </Link>
             </li>
 
             <li className='nav-item'>
               <Link
-                to='/sesion'
+                to='/schedule'
                 className='nav-links'
                 onClick={closeMobileMenu}
               >
@@ -87,15 +84,7 @@ function Navbar() {
               </Link>
             </li>
 
-            <li className='btn-signup'>
-              <Link
-                to='/signup'
-                className='nav-links-mobile'
-                onClick={closeMobileMenu}
-              >
-                Sign Up
-              </Link>
-            </li>
+
            </>}
           </ul>
           { auth.isAuthenticated ? <>

@@ -5,14 +5,12 @@ import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
 import CardActions from "@material-ui/core/CardActions";
 import { Container } from "react-grid";
-import {  Row, Col } from 'react-grid';
-
   
 export default function App() {
   return (
     <div style={{backgroundColor: "#f9f9f9", display: "flex"}}>
       <Container>
-        
+        <row>
          
           <div class="col-md-4"  style={{display: 'flex', flexDirection: 'column', marginTop: "5rem"}}>
       <Card
@@ -48,7 +46,7 @@ export default function App() {
           </Typography>
         </CardContent>
         <CardActions>
-          <Button size="small" style={{border: "1px solid #fff", color: "#f9f9f9"}}href="/session">Add Events</Button>
+          <Button size="small" style={{border: "1px solid #fff", color: "#f9f9f9"}}href="/sesion">Add Events</Button>
         </CardActions>
       </Card>
       </div>
@@ -93,12 +91,7 @@ export default function App() {
       </Card>
       </div>
 
-<Row>   
-<Col  sm={2} style={{background: "#18183D", color:"white", overflow: 'hidden',}}>
-  <h3>All</h3>
-  <Card.Link style={{color: "white"}}href="/student">Courses</Card.Link>   
-  <h6>Students</h6>
-  <Card.Link style={{color: "white"}}href="/sessions">Sessions</Card.Link> 
+
       <div class="col-md-4">
       <Card
         style={{
@@ -132,7 +125,7 @@ export default function App() {
           </Typography>
         </CardContent>
         <CardActions>
-        <Button size="small" style={{border: "1px solid #fff", color: "#f9f9f9"}}href="/newstudent">Add New Student</Button>
+        <Button size="small" style={{border: "1px solid #fff", color: "#f9f9f9"}}href="/signin">Add New Student</Button>
     
         </CardActions>
       </Card>
@@ -179,8 +172,7 @@ export default function App() {
 
 
 
-      </Col>
-      </Row>
+      </row>
       </Container>
 
 
