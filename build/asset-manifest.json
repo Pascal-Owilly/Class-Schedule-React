@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/Class-Schedule-React/static/css/main.741a164a.chunk.css",
+    "main.js": "/Class-Schedule-React/static/js/main.facd0a15.chunk.js",
+    "main.js.map": "/Class-Schedule-React/static/js/main.facd0a15.chunk.js.map",
+    "runtime-main.js": "/Class-Schedule-React/static/js/runtime-main.07334431.js",
+    "runtime-main.js.map": "/Class-Schedule-React/static/js/runtime-main.07334431.js.map",
+    "static/css/2.68a81a89.chunk.css": "/Class-Schedule-React/static/css/2.68a81a89.chunk.css",
+    "static/js/2.7f73729d.chunk.js": "/Class-Schedule-React/static/js/2.7f73729d.chunk.js",
+    "static/js/2.7f73729d.chunk.js.map": "/Class-Schedule-React/static/js/2.7f73729d.chunk.js.map",
+    "index.html": "/Class-Schedule-React/index.html",
+    "precache-manifest.812ae6c511f370ccba6d201e802dcf77.js": "/Class-Schedule-React/precache-manifest.812ae6c511f370ccba6d201e802dcf77.js",
+    "service-worker.js": "/Class-Schedule-React/service-worker.js",
+    "static/css/2.68a81a89.chunk.css.map": "/Class-Schedule-React/static/css/2.68a81a89.chunk.css.map",
+    "static/css/main.741a164a.chunk.css.map": "/Class-Schedule-React/static/css/main.741a164a.chunk.css.map",
+    "static/js/2.7f73729d.chunk.js.LICENSE.txt": "/Class-Schedule-React/static/js/2.7f73729d.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.07334431.js",
+    "static/css/2.68a81a89.chunk.css",
+    "static/js/2.7f73729d.chunk.js",
+    "static/css/main.741a164a.chunk.css",
+    "static/js/main.facd0a15.chunk.js"
+  ]
+}
