@@ -34,6 +34,7 @@ class App extends Component {
       this.setState({ sessions: data })
     })
     .catch(console.log)
+    
   }
 
   render() {
