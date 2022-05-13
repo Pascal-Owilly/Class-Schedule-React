@@ -44,7 +44,6 @@ const Announcement = () => {
 <Row>   
 <Col className="announcement"  sm={2} style={{background: "#18183D",height: "760px", color:"white", overflow: 'hidden',position:"fixed", marginTop: "5.0rem"}}>
 
-
 </Col>
 <Col sm={10}><h2>| Announcements</h2>
 <div className='repo-container' style={{marginLeft: "20%", marginTop: "5%"}}>
