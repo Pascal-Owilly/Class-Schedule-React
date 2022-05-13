@@ -20,6 +20,7 @@ import Newstudent from './components/pages/Newstudent';
 
   
 class App extends Component {
+  
 
   state = {
     contacts: []
@@ -62,5 +63,7 @@ class App extends Component {
   );
 }
 }
+
+
 
 export default App;
