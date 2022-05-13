@@ -46,6 +46,7 @@ const Announcement = () => {
 
 
 
+
 <Col className="announcement"  sm={2} style={{background: "#18183D",height: "760px", color:"white", overflow: 'hidden',position:"fixed", marginTop: "5.0rem"}}>
 
 </Col>
